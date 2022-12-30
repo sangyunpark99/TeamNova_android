@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VideoDetailActivity">
+
+    <TextView
+        android:id="@+id/video_detail_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="검정고무신"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/video_detail_frameLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@+id/video_detail_subtitle"
+        app:layout_constraintTop_toBottomOf="@+id/video_detail_subtitle">
+
+        <VideoView
+            android:id="@+id/video_detail_movieView"
+            android:layout_width="match_parent"
+            android:layout_height="197dp"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+
+
+    <TextView
+        android:id="@+id/video_detail_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="1화 : 탱구의 봄"
+        app:layout_constraintStart_toStartOf="@+id/video_detail_title"
+        app:layout_constraintTop_toBottomOf="@+id/video_detail_title" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/video_detail_recyclerView"
+        android:layout_width="382dp"
+        android:layout_height="282dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="@+id/textView17"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="회차시"
+        app:layout_constraintStart_toStartOf="@+id/video_detail_subtitle"
+        app:layout_constraintTop_toBottomOf="@+id/video_detail_frameLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

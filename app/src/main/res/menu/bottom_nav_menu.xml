@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_box_office"
+        android:title="순위"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:color="@color/white"
+        />
+    <item
+        android:id="@+id/menu_movie_search"
+        android:title="검색"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:color="@color/white"/>
+    <item
+        android:id="@+id/menu_movie_record"
+        android:title="기록"
+        android:icon="@drawable/ic_baseline_menu_book_24"
+        android:color="@color/white"/>
+
+    <item
+        android:id="@+id/menu_movie_map"
+        android:title="영화관"
+        android:icon="@drawable/ic_baseline_location_on"
+        android:color="@color/white" />
+
+    <item
+        android:id="@+id/menu_movie_video"
+        android:title="영상"
+        android:icon="@drawable/ic_baseline_video"
+        android:color="@color/white" />
+</menu>

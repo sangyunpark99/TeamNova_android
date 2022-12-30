@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_video_layout"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/item_video_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1화"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/item_video_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="탱구의 봄"
+        app:layout_constraintStart_toEndOf="@+id/item_video_number"
+        app:layout_constraintTop_toTopOf="@+id/item_video_number" />
+
+    <TextView
+        android:id="@+id/item_video_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="기영이네 집 강아지인 탱구가 봄을 맞이함"
+        app:layout_constraintStart_toStartOf="@+id/item_video_number"
+        app:layout_constraintTop_toBottomOf="@+id/item_video_title" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
